@@ -10,7 +10,7 @@ export const Recorder: FC<
   }>
 > = ({ recording, processing, transcription, children }) => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-lvh bg-black">
+    <div className="flex flex-col gap-2 items-center justify-center min-h-lvh bg-black">
       <div className="bg-zinc-950 rounded-2xl ring-1 ring-zinc-800 p-8 w-96 flex-col flex gap-4">
         <div className="space-y-4 relative">
           <div
@@ -36,6 +36,11 @@ export const Recorder: FC<
           </div>
         </div>
         {children}
+      </div>
+      <div className="text-zinc-500 text-sm hover:text-zinc-300">
+        <a href="https://github.com/vthinkxie/ai-recorder" target="_blank">
+          Fork me on Github
+        </a>
       </div>
     </div>
   );
